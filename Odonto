@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Odontologia Fortes | Campo Grande - MS</title>
+
+    <meta
+        name="description"
+        content="Odontologia Fortes em Campo Grande - MS. Implantes, endodontia, próteses, facetas, cirurgia bucomaxilofacial, harmonização orofacial e muito mais."
+    >
+
+    <style>
+
+        :root {
+            --azul: #123FAE;
+            --azul-escuro: #0A1E5E;
+            --azul-vivo: #1754D1;
+
+            --grafite: #181A1F;
+
+            --dourado: #E0A62E;
+            --dourado-forte: #D78D13;
+            --dourado-claro: #FFD56A;
+
+            --branco: #FFFFFF;
+            --cinza-claro: #F5F7FB;
+            --cinza: #707070;
+            --texto: #202020;
+
+            --whatsapp: #25D366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--texto);
+            background: var(--branco);
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        section {
+            padding: 90px 8%;
+        }
+
+        /* MENU */
+
+        header {
+            width: 100%;
+            padding: 16px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255,255,255,0.97);
+
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            color: var(--grafite);
+
+            font-size: 25px;
+            font-weight: 800;
+
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--dourado);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+
+            color: var(--grafite);
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--dourado);
+        }
+
+        .menu-agendar {
+            background: var(--azul);
+
+            color: white !important;
+
+            padding: 11px 19px;
+
+            border-radius: 30px;
+        }
+
+        /* CAPA */
+
+        .hero {
+            min-height: 650px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 80px 8%;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(10,30,94,0.97) 0%,
+                    rgba(18,63,174,0.90) 45%,
+                    rgba(23,84,209,0.45) 100%
+                ),
+                url("imagens/fachada.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            color: white;
+        }
+
+        .hero-tag {
+            color: var(--dourado-claro);
+
+            font-size: 13px;
+            font-weight: bold;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: clamp(44px,6vw,70px);
+
+            line-height: 1.04;
+
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            max-width: 620px;
+
+            font-size: 19px;
+
+            color: rgba(255,255,255,0.92);
+
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+        }
+
+        /* BOTÕES */
+
+        .btn {
+            display: inline-block;
+
+            padding: 15px 27px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background:
+                linear-gradient(
+                    135deg,
+                    #F2BB3B,
+                    #D78D13
+                );
+
+            color: white;
+
+            box-shadow:
+                0 8px 25px rgba(224,166,46,0.35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.02);
+        }
+
+        .btn-outline {
+            border:
+                1px solid rgba(255,255,255,0.85);
+
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+
+            color: var(--azul);
+        }
+
+        .btn-whatsapp {
+            background: var(--whatsapp);
+
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1eaf55;
+
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp small {
+            display: block;
+
+            font-size: 11px;
+
+            margin-top: 3px;
+
+            font-weight: normal;
+        }
+
+        /* TITULOS */
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: var(--dourado);
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+        }
+
+        .section-title h2 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: clamp(32px,4vw,48px);
+
+            color: var(--azul-escuro);
+
+            margin-top: 8px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+
+            margin: 15px auto 0;
+
+            color: var(--cinza);
+        }
+
+        /* DIFERENCIAIS */
+
+        .diferenciais {
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+
+        .diferenciais-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+
+            gap: 25px;
+        }
+
+        .diferencial {
+            border: 1px solid #e7e7e7;
+
+            border-radius: 18px;
+
+            padding: 30px 25px;
+
+            text-align: center;
+
+            transition: 0.3s;
+
+            background: white;
+        }
+
+        .diferencial:hover {
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 12px 32px rgba(18,63,174,0.10);
+        }
+
+        .diferencial-icon {
+            font-size: 34px;
+
+            color: var(--dourado);
+
+            margin-bottom: 12px;
+        }
+
+        .diferencial h3 {
+            color: var(--azul);
+
+            margin-bottom: 8px;
+        }
+
+        .diferencial p {
+            font-size: 14px;
+
+            color: var(--cinza);
+        }
+
+        /* PROCEDIMENTOS */
+
+        #procedimentos {
+            background:
+                linear-gradient(
+                    180deg,
+                    #F8FAFF,
+                    #EFF3FF
+                );
+        }
+
+        .procedimentos-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+
+            gap: 25px;
+        }
+
+        .procedimento-card {
+            background: white;
+
+            overflow: hidden;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 8px 30px rgba(0,0,0,0.07);
+
+            transition: 0.3s;
+        }
+
+        .procedimento-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .procedimento-card img {
+            width: 100%;
+
+            height: 235px;
+
+            object-fit: cover;
+        }
+
+        .procedimento-content {
+            padding: 25px;
+        }
+
+        .procedimento-content h3 {
+            color: var(--azul);
+
+            font-size: 22px;
+
+            margin-bottom: 10px;
+        }
+
+        .procedimento-content p {
+            color: var(--cinza);
+
+            font-size: 14px;
+
+            margin-bottom: 18px;
+        }
+
+        .procedimento-content a {
+            color: var(--dourado-forte);
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+        /* ESTRUTURA */
+
+        .estrutura-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 65px;
+
+            align-items: center;
+        }
+
+        .estrutura-grid img {
+            width: 100%;
+
+            height: 520px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 12px 35px rgba(0,0,0,0.10);
+        }
+
+        .estrutura-content span {
+            color: var(--dourado);
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+        .estrutura-content h2 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            color: var(--azul-escuro);
+
+            font-size: 42px;
+
+            line-height: 1.15;
+
+            margin: 12px 0 20px;
+        }
+
+        .estrutura-content p {
+            color: var(--cinza);
+
+            margin-bottom: 16px;
+        }
+
+        .check-item {
+            margin-top: 9px;
+
+            font-weight: 600;
+        }
+
+        .check-item::before {
+            content: "✓";
+
+            color: var(--dourado);
+
+            margin-right: 9px;
+        }
+
+        /* RESULTADOS */
+
+        #resultados {
+            background:
+                linear-gradient(
+                    135deg,
+                    #07102C,
+                    #0D276F
+                );
+        }
+
+        #resultados .section-title h2 {
+            color: white;
+        }
+
+        #resultados .section-title p {
+            color: rgba(255,255,255,0.72);
+        }
+
+        .galeria {
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+
+            gap: 18px;
+        }
+
+        .galeria-item {
+            border-radius: 16px;
+
+            overflow: hidden;
+
+            background: #111;
+        }
+
+        .galeria-item img {
+            width: 100%;
+
+            height: 340px;
+
+            object-fit: cover;
+
+            transition: 0.4s;
+        }
+
+        .galeria-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* VÍDEO */
+
+        .video-section {
+            background: var(--cinza-claro);
+
+            text-align: center;
+        }
+
+        .video-container {
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+        .video-container video {
+            width: 100%;
+
+            max-height: 650px;
+
+            border-radius: 20px;
+
+            background: black;
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        /* EQUIPE */
+
+        #equipe {
+            background:
+                linear-gradient(
+                    180deg,
+                    #FFFFFF,
+                    #F3F6FF
+                );
+        }
+
+        .equipe-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+
+            gap: 30px;
+        }
+
+        .profissional {
+            background: white;
+
+            padding: 38px 25px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            transition: 0.3s;
+
+            box-shadow:
+                0 10px 30px rgba(18,63,174,0.08);
+        }
+
+        .profissional:hover {
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 16px 40px rgba(18,63,174,0.14);
+        }
+
+        .profissional img {
+            width: 220px;
+
+            height: 220px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            margin: 0 auto 22px;
+
+            border: 5px solid var(--dourado);
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .profissional h3 {
+            color: var(--azul);
+
+            font-size: 24px;
+
+            margin-bottom: 8px;
+        }
+
+        .profissional p {
+            color: var(--cinza);
+
+            font-size: 14px;
+
+            margin-bottom: 14px;
+        }
+
+        .profissional-destaque {
+            color: var(--dourado-forte) !important;
+
+            font-weight: bold;
+
+            font-size: 15px !important;
+        }
+
+        /* CTA */
+
+        .cta {
+            background:
+                linear-gradient(
+                    rgba(10,30,94,0.95),
+                    rgba(18,63,174,0.93)
+                ),
+                url("imagens/resultado1.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            color: white;
+
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 46px;
+
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: rgba(255,255,255,0.88);
+
+            margin-bottom: 28px;
+        }
+
+        .whatsapp-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 16px;
+
+            flex-wrap: wrap;
+        }
+
+        /* CONTATO */
+
+        .contato-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 50px;
+
+            align-items: center;
+        }
+
+        .contato-info h3 {
+            font-size: 30px;
+
+            color: var(--azul);
+
+            margin-bottom: 20px;
+        }
+
+        .contato-info p {
+            color: var(--cinza);
+
+            margin-bottom: 14px;
+
+            font-size: 16px;
+        }
+
+        .contato-botoes {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: flex-start;
+
+            gap: 12px;
+
+            margin-top: 25px;
+        }
+
+        .fachada-contato img {
+            width: 100%;
+
+            height: 430px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 12px 32px rgba(0,0,0,0.10);
+        }
+
+        /* MAPA */
+
+        .mapa {
+            margin-top: 45px;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            min-height: 350px;
+
+            background: var(--cinza-claro);
+
+            box-shadow:
+                0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        .mapa iframe {
+            display: block;
+
+            width: 100%;
+
+            height: 350px;
+
+            border: 0;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #090D19;
+
+            color: rgba(255,255,255,0.75);
+
+            text-align: center;
+
+            padding: 40px 20px;
+        }
+
+        footer strong {
+            display: block;
+
+            color: var(--dourado-claro);
+
+            font-size: 20px;
+
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* WHATSAPP FLUTUANTE */
+
+        .whatsapp-float {
+            position: fixed;
+
+            right: 22px;
+
+            bottom: 22px;
+
+            width: 62px;
+
+            height: 62px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            border-radius: 50%;
+
+            background: var(--whatsapp);
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 29px;
+
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.25);
+
+            z-index: 999;
+
+            transition: 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+        }
+
+        /* RESPONSIVO */
+
+        @media (max-width: 900px) {
+
+            nav {
+                display: none;
+            }
+
+            .diferenciais-grid,
+            .procedimentos-grid,
+            .equipe-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .equipe-grid {
+                max-width: 520px;
+                margin: auto;
+            }
+
+            .estrutura-grid,
+            .contato-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .galeria {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 65px 6%;
+            }
+
+            header {
+                padding: 15px 6%;
+            }
+
+            .logo {
+                font-size: 19px;
+            }
+
+            .hero {
+                min-height: 600px;
+                padding: 70px 6%;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+
+            .galeria-item img {
+                height: 380px;
+            }
+
+            .estrutura-grid img,
+            .fachada-contato img {
+                height: 350px;
+            }
+
+            .profissional img {
+                width: 190px;
+                height: 190px;
+            }
+
+            .cta h2 {
+                font-size: 35px;
+            }
+
+            .whatsapp-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .whatsapp-buttons .btn {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .contato-botoes {
+                align-items: stretch;
+            }
+
+            .contato-botoes .btn {
+                text-align: center;
+            }
+
+            .whatsapp-float {
+                width: 57px;
+                height: 57px;
+
+                right: 16px;
+                bottom: 16px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- MENU -->
+
+<header>
+
+    <div class="logo">
+        Odontologia <span>Fortes</span>
+    </div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#procedimentos">Procedimentos</a>
+        <a href="#estrutura">A Clínica</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+
+        <a href="#agendamento" class="menu-agendar">
+            Agendar
+        </a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            Implantes • Cirurgias • Reabilitação • Harmonização
+        </div>
+
+        <h1>
+            Cuidando do seu sorriso com excelência.
+        </h1>
+
+        <p>
+            Atendimento humanizado, experiência e cuidado
+            para devolver saúde, função e confiança ao seu sorriso.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#agendamento"
+                class="btn btn-primary"
+            >
+                Agendar uma avaliação
+            </a>
+
+            <a
+                href="#procedimentos"
+                class="btn btn-outline"
+            >
+                Conhecer tratamentos
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DIFERENCIAIS -->
+
+<section class="diferenciais">
+
+    <div class="diferenciais-grid">
+
+        <div class="diferencial">
+            <div class="diferencial-icon">♡</div>
+
+            <h3>Atendimento humanizado</h3>
+
+            <p>
+                Cuidado e atenção individualizada
+                para cada paciente.
+            </p>
+        </div>
+
+
+        <div class="diferencial">
+            <div class="diferencial-icon">✦</div>
+
+            <h3>Experiência</h3>
+
+            <p>
+                Tratamentos odontológicos planejados
+                de forma individual.
+            </p>
+        </div>
+
+
+        <div class="diferencial">
+            <div class="diferencial-icon">✚</div>
+
+            <h3>Saúde e estética</h3>
+
+            <p>
+                Tratamentos buscando equilíbrio
+                entre função, saúde e estética.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCEDIMENTOS -->
+
+<section id="procedimentos">
+
+    <div class="section-title">
+
+        <span>Tratamentos</span>
+
+        <h2>Nossos procedimentos</h2>
+
+        <p>
+            Conheça os procedimentos realizados
+            pela equipe da Odontologia Fortes.
+        </p>
+
+    </div>
+
+
+    <div class="procedimentos-grid">
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/implante1.jpg"
+                alt="Implante zigomático"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Implante Zigomático</h3>
+
+                <p>
+                    Alternativa de reabilitação
+                    para casos específicos de perda óssea severa.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/implante1.jpg"
+                alt="Implante convencional"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Implante Convencional</h3>
+
+                <p>
+                    Reabilitação de dentes perdidos
+                    com planejamento individualizado.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/resultado1.jpg"
+                alt="Endodontia"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Endodontia</h3>
+
+                <p>
+                    Tratamento endodôntico
+                    para preservação da saúde e função do dente.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/protese1.jpg"
+                alt="Prótese dentária"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Prótese</h3>
+
+                <p>
+                    Soluções para reabilitação
+                    estética e funcional do sorriso.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/resultado2.jpg"
+                alt="Lentes de contato e facetas"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Lentes de Contato / Facetas</h3>
+
+                <p>
+                    Planejamento estético para melhorar
+                    forma, proporção e harmonia do sorriso.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/resultado3.jpg"
+                alt="Cirurgia bucomaxilofacial"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Cirurgia Bucomaxilofacial</h3>
+
+                <p>
+                    Procedimentos cirúrgicos planejados
+                    de acordo com a necessidade de cada caso.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/resultado4.jpg"
+                alt="Apicectomia"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Apicectomia</h3>
+
+                <p>
+                    Procedimento cirúrgico realizado
+                    em casos específicos na região da raiz dentária.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/resultado5.jpg"
+                alt="Extração de sisos inclusos"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Extração de Sisos Inclusos</h3>
+
+                <p>
+                    Avaliação e remoção cirúrgica
+                    de terceiros molares inclusos.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/resultado6.jpg"
+                alt="Harmonização orofacial"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Harmonização Orofacial</h3>
+
+                <p>
+                    Procedimentos voltados ao equilíbrio
+                    e harmonia estética da face.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/resultado2.jpg"
+                alt="Botox"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Botox</h3>
+
+                <p>
+                    Aplicação de toxina botulínica
+                    conforme avaliação individualizada.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/resultado3.jpg"
+                alt="Preenchimento facial"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Preenchimento</h3>
+
+                <p>
+                    Procedimentos de preenchimento facial
+                    planejados de forma personalizada.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="procedimento-card">
+
+            <img
+                src="imagens/resultado4.jpg"
+                alt="Full Face"
+            >
+
+            <div class="procedimento-content">
+
+                <h3>Full Face</h3>
+
+                <p>
+                    Planejamento facial integrado
+                    com abordagem personalizada.
+                </p>
+
+                <a href="#agendamento">
+                    Agendar avaliação →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ESTRUTURA -->
+
+<section id="estrutura">
+
+    <div class="estrutura-grid">
+
+        <div>
+
+            <img
+                src="imagens/recepcao.jpg"
+                alt="Recepção da Odontologia Fortes"
+            >
+
+        </div>
+
+        <div class="estrutura-content">
+
+            <span>
+                Odontologia Fortes
+            </span>
+
+            <h2>
+                Uma estrutura preparada para receber você.
+            </h2>
+
+            <p>
+                A Odontologia Fortes oferece um ambiente confortável
+                e atendimento próximo para cuidar da saúde do seu sorriso.
+            </p>
+
+            <p>
+                Cada paciente recebe uma avaliação individualizada
+                para definição do seu plano de tratamento.
+            </p>
+
+            <div class="check-item">
+                Implantes e reabilitação oral
+            </div>
+
+            <div class="check-item">
+                Cirurgias odontológicas
+            </div>
+
+            <div class="check-item">
+                Estética do sorriso
+            </div>
+
+            <div class="check-item">
+                Harmonização orofacial
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RESULTADOS -->
+
+<section id="resultados">
+
+    <div class="section-title">
+
+        <span>
+            Nosso trabalho
+        </span>
+
+        <h2>
+            Sorrisos que contam histórias
+        </h2>
+
+        <p>
+            Alguns registros de trabalhos realizados pela equipe.
+        </p>
+
+    </div>
+
+    <div class="galeria">
+
+        <div class="galeria-item">
+            <img src="imagens/resultado1.jpg" alt="Resultado odontológico">
+        </div>
+
+        <div class="galeria-item">
+            <img src="imagens/resultado2.jpg" alt="Resultado odontológico">
+        </div>
+
+        <div class="galeria-item">
+            <img src="imagens/resultado3.jpg" alt="Resultado odontológico">
+        </div>
+
+        <div class="galeria-item">
+            <img src="imagens/resultado4.jpg" alt="Resultado odontológico">
+        </div>
+
+        <div class="galeria-item">
+            <img src="imagens/resultado5.jpg" alt="Resultado odontológico">
+        </div>
+
+        <div class="galeria-item">
+            <img src="imagens/resultado6.jpg" alt="Resultado odontológico">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- VIDEO -->
+
+<section class="video-section">
+
+    <div class="section-title">
+
+        <span>
+            Nossa clínica
+        </span>
+
+        <h2>
+            Conheça a Odontologia Fortes
+        </h2>
+
+        <p>
+            Conheça um pouco mais do nosso espaço.
+        </p>
+
+    </div>
+
+    <div class="video-container">
+
+        <video
+            controls
+            playsinline
+            preload="metadata"
+        >
+
+            <source
+                src="imagens/video-clinica.mp4"
+                type="video/mp4"
+            >
+
+            Seu navegador não suporta reprodução de vídeos.
+
+        </video>
+
+    </div>
+
+</section>
+
+
+<!-- EQUIPE -->
+
+<section id="equipe">
+
+    <div class="section-title">
+
+        <span>
+            Equipe
+        </span>
+
+        <h2>
+            Profissionais da Odontologia Fortes
+        </h2>
+
+        <p>
+            Conheça os profissionais que fazem parte da equipe.
+        </p>
+
+    </div>
+
+
+    <div class="equipe-grid">
+
+        <div class="profissional">
+
+            <img
+                src="imagens/marcelo.jpg"
+                alt="Dr. Marcelo Fortes"
+            >
+
+            <h3>
+                Dr. Marcelo Fortes
+            </h3>
+
+            <p class="profissional-destaque">
+                Implantes • Cirurgias • Reabilitação
+            </p>
+
+            <p>
+                Realiza os procedimentos odontológicos
+                apresentados no site.
+            </p>
+
+            <a
+                href="https://wa.me/5567992323838?text=Olá%20Dr.%20Marcelo!%20Vim%20pelo%20site%20da%20Odontologia%20Fortes%20e%20gostaria%20de%20agendar%20uma%20avaliação."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+            >
+                Falar com Dr. Marcelo
+
+                <small>
+                    (67) 99232-3838
+                </small>
+            </a>
+
+        </div>
+
+
+        <div class="profissional">
+
+            <img
+                src="imagens/emiliana.jpg"
+                alt="Dra. Emiliana Fortes"
+            >
+
+            <h3>
+                Dra. Emiliana Fortes
+            </h3>
+
+            <p class="profissional-destaque">
+                Harmonização Orofacial
+            </p>
+
+            <p>
+                Atendimento voltado exclusivamente
+                à Harmonização Orofacial.
+            </p>
+
+        </div>
+
+
+        <div class="profissional">
+
+            <img
+                src="imagens/aline.jpg"
+                alt="Dra. Aline Amaral"
+            >
+
+            <h3>
+                Dra. Aline Amaral
+            </h3>
+
+            <p class="profissional-destaque">
+                Implantes • Cirurgias • Reabilitação
+            </p>
+
+            <p>
+                Realiza os procedimentos odontológicos
+                apresentados no site.
+            </p>
+
+            <a
+                href="https://wa.me/5567991372352?text=Olá%20Dra.%20Aline!%20Vim%20pelo%20site%20da%20Odontologia%20Fortes%20e%20gostaria%20de%20agendar%20uma%20avaliação."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+            >
+                Falar com Dra. Aline
+
+                <small>
+                    (67) 99137-2352
+                </small>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AGENDAMENTO -->
+
+<section
+    class="cta"
+    id="agendamento"
+>
+
+    <h2>
+        Agende sua avaliação
+    </h2>
+
+    <p>
+        Escolha um dos contatos e fale diretamente pelo WhatsApp.
+    </p>
+
+    <div class="whatsapp-buttons">
+
+        <a
+            href="https://wa.me/5567991372352?text=Olá%20Dra.%20Aline!%20Vim%20pelo%20site%20da%20Odontologia%20Fortes%20e%20gostaria%20de%20agendar%20uma%20avaliação."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp"
+        >
+            Dra. Aline Amaral
+
+            <small>
+                (67) 99137-2352
+            </small>
+        </a>
+
+
+        <a
+            href="https://wa.me/5567992323838?text=Olá%20Dr.%20Marcelo!%20Vim%20pelo%20site%20da%20Odontologia%20Fortes%20e%20gostaria%20de%20agendar%20uma%20avaliação."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp"
+        >
+            Dr. Marcelo Fortes
+
+            <small>
+                (67) 99232-3838
+            </small>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTATO -->
+
+<section id="contato">
+
+    <div class="section-title">
+
+        <span>
+            Localização
+        </span>
+
+        <h2>
+            Venha conhecer a Odontologia Fortes
+        </h2>
+
+        <p>
+            Entre em contato ou venha conhecer nossa clínica.
+        </p>
+
+    </div>
+
+    <div class="contato-grid">
+
+        <div class="contato-info">
+
+            <h3>
+                Odontologia Fortes
+            </h3>
+
+            <p>
+                📍 Rua José Joaquim da Silva, nº 10
+            </p>
+
+            <p>
+                🕐 Horário de funcionamento:
+                <strong>08:00 às 20:00</strong>
+            </p>
+
+            <p>
+                📱 Dra. Aline Amaral:
+                <strong>(67) 99137-2352</strong>
+            </p>
+
+            <p>
+                📱 Dr. Marcelo Fortes:
+                <strong>(67) 99232-3838</strong>
+            </p>
+
+            <div class="contato-botoes">
+
+                <a
+                    href="https://wa.me/5567991372352?text=Olá%20Dra.%20Aline!%20Vim%20pelo%20site%20da%20Odontologia%20Fortes%20e%20gostaria%20de%20agendar%20uma%20avaliação."
+                    target="_blank"
+                    class="btn btn-whatsapp"
+                >
+                    WhatsApp — Dra. Aline
+                </a>
+
+
+                <a
+                    href="https://wa.me/5567992323838?text=Olá%20Dr.%20Marcelo!%20Vim%20pelo%20site%20da%20Odontologia%20Fortes%20e%20gostaria%20de%20agendar%20uma%20avaliação."
+                    target="_blank"
+                    class="btn btn-whatsapp"
+                >
+                    WhatsApp — Dr. Marcelo
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="fachada-contato">
+
+            <img
+                src="imagens/fachada.jpg"
+                alt="Fachada da Odontologia Fortes"
+            >
+
+        </div>
+
+    </div>
+
+
+    <div class="mapa">
+
+        <iframe
+            src="https://www.google.com/maps?q=Rua%20Jos%C3%A9%20Joaquim%20da%20Silva%2010%20Campo%20Grande%20MS&output=embed"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização da Odontologia Fortes">
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <strong>
+        Odontologia Fortes
+    </strong>
+
+    <p>
+        Cuidando do seu sorriso com excelência.
+    </p>
+
+    <p>
+        📍 Rua José Joaquim da Silva, nº 10 — Campo Grande - MS
+    </p>
+
+    <p>
+        🕐 Horário de funcionamento:
+        08:00 às 20:00
+    </p>
+
+    <p>
+        Dra. Aline Amaral — (67) 99137-2352
+    </p>
+
+    <p>
+        Dr. Marcelo Fortes — (67) 99232-3838
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 Odontologia Fortes. Todos os direitos reservados.
+    </p>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+    href="https://wa.me/5567991372352?text=Olá%20Dra.%20Aline!%20Vim%20pelo%20site%20da%20Odontologia%20Fortes%20e%20gostaria%20de%20mais%20informações."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    aria-label="Falar com Dra. Aline pelo WhatsApp"
+>
+    ☎
+</a>
+
+
+</body>
+</html>
